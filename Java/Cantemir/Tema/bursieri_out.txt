@@ -1,4 +1,4 @@
-Student Nr. Matricol: 1025, Nume: Popa, Prenume: Andrei, Formatie: ISM141/2, Nota: 2.0, Bursa: 725.5
-Student Nr. Matricol: 1024, Nume: Mihalcea, Prenume: Ioan, Formatie: ISM141/1, Nota: 2.0, Bursa: 801.1
-Student Nr. Matricol: 1026, Nume: Prodan, Prenume: Anamaria, Formatie: TI131/1, Nota: 2.0, Bursa: 745.5
-Student Nr. Matricol: 1029, Nume: Popescu, Prenume: Bianca, Formatie: TI131/1, Nota: 2.0, Bursa: 780.8
+Student Nr. Matricol: 1025, Nume: Popa, Prenume: Andrei, Formatie: ISM141/2, Nota: 1.0, Bursa: 725.5
+Student Nr. Matricol: 1024, Nume: Mihalcea, Prenume: Ioan, Formatie: ISM141/1, Nota: 1.0, Bursa: 801.1
+Student Nr. Matricol: 1026, Nume: Prodan, Prenume: Anamaria, Formatie: TI131/1, Nota: 1.0, Bursa: 745.5
+Student Nr. Matricol: 1029, Nume: Popescu, Prenume: Bianca, Formatie: TI131/1, Nota: 1.0, Bursa: 780.8
