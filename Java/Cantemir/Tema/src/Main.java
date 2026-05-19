@@ -19,9 +19,9 @@ public class Main {
         String cheieCautare = prenume + "-" + nume;
         Student gasit = gaseste.get(cheieCautare);
 
-        if (gasit != null && gasit.getNota() != null) {
-            return gasit.getNota(); // autounboxing OK
-        }
+//        if (gasit != null && gasit.getNota() != null) {
+//            return gasit.getNota();
+//        }
 
         return 0.0f;
     }
