@@ -4,7 +4,7 @@ public class Student {
 
     private final int numarMatricol;
     private final String prenume, nume, formatieDeStudiu;
-    private double nota=0;
+    private final Float nota = 1.0f;
 
     public Student() {
         numarMatricol = 0;
@@ -13,13 +13,6 @@ public class Student {
         formatieDeStudiu = "Nespecificat";
     }
 
-    public Student(int nr, String pre, String num, String form, double nota) {
-        numarMatricol = nr;
-        prenume = pre;
-        nume = num;
-        formatieDeStudiu = form;
-        this.nota=nota;
-    }
     public Student(int nr, String pre, String num, String form) {
         numarMatricol = nr;
         prenume = pre;
@@ -43,12 +36,10 @@ public class Student {
         return formatieDeStudiu;
     }
 
-    public double getNota() {
+    public Float getNota() {
         return nota;
     }
-    public void setNota(double nota) {
-        this.nota = nota;
-    }
+
 
     @Override
     public String toString() {
