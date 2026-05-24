@@ -1,5 +1,4 @@
 package lab10;
-
 import student.Student;
 
 import java.util.Arrays;
@@ -21,22 +20,23 @@ public class AplicatieCuStrategy {
                 new Student(1029, "Andrei", "Dobrescu", "TI131/2", 2.22)
         );
 
-        StrategieStudenti consola = new StudentiInConsola();
-        StrategieStudenti fisierText = new StudentiInFisierText("studentiStrategyText.txt");
-        StrategieStudenti fisierXlsx = new StudentiInFisierXlsx("studentiStrategyExcel.xlsx");
+        List<StrategieStudenti> strategies = Arrays.asList(
+                new StudentiInConsola(),
+                new StudentiInFisierText("studentiStrategyText.txt"),
+                new StudentiInFisierXlsx("studentiStrategyExcel.xlsx")
+        );
 
-        System.out.println("fisare in consola  ");
-        consola.executa(studenti);
-
-        System.out.println("\n  Export TXT  ");
-        fisierText.executa(studenti);
-
-        System.out.println("\n  Export XLSX  ");
-        fisierXlsx.executa(studenti);
+        for (StrategieStudenti strategy : strategies) {
+            TimeExecutionDecorator decorator = new TimeExecutionDecorator(strategy, studenti);
+            long time = decorator.executionTime(studenti);
+            System.out.println("Execution time: " + time + " ms for " + strategy.getClass().getSimpleName());
+            System.out.println();
+        }
 
         System.out.println("\n  Citire TXT  ");
         StudentiInFisierText citireText = new StudentiInFisierText("studentiStrategyText.txt");
         List<Student> studentiDinTxt = citireText.citeste();
+        StudentiInConsola consola = new StudentiInConsola();
         consola.executa(studentiDinTxt);
 
         System.out.println("\n  Citire XLSX  ");
